@@ -1,3 +1,5 @@
+//Using the JavaScript language, have the function SwapCase(str) take the str parameter and swap the case of each character. For example: if str is "Hello World" the output should be hELLO wORLD. Let numbers and symbols stay the way they are. 
+
 function SwapCase(str) { 
 
   // code goes here
@@ -14,6 +16,6 @@ function SwapCase(str) {
          
 }
    
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(SwapCase(readline()));   
+// My test
+var str = "Sup DUDE!!?";
+console.log(SwapCase(str)); //solution: "sUP dude!!?"
