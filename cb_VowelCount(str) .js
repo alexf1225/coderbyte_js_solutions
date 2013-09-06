@@ -1,3 +1,5 @@
+//Using the JavaScript language, have the function VowelCount(str) take the str string parameter being passed and return the number of vowels the string contains (ie. "All cows eat grass" would return 5). Do not count y as a vowel for this challenge. 
+
 function VowelCount(str) { 
 
   // code goes here  
@@ -9,11 +11,12 @@ function VowelCount(str) {
 }
 
 
+// My test
 var strToTest = "zeyxvautobrqU";
-console.log(VowelCount(strToTest));
+console.log(VowelCount(strToTest)); //solution: 5
 
 
-/* My paste all solution for coderbyte:
+/* Prior Solution
 function VowelCount(str) { 
 
   // code goes here  
@@ -32,20 +35,3 @@ function VowelCount(str) {
 // to see how to enter arguments in JavaScript scroll down
 print(VowelCount(readline()));  */
 
-
-
-/* More streamlined code
-function VowelCount(str) { 
-
-  // code goes here  
-  for (var i = 0, vowelCount = 0; i < str.length; i++){
-    if (/[aeiou]/.test(str[i].toLowerCase())){vowelCount++};
-  }
-  return vowelCount; 
-     
-}
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(VowelCount(readline()));  
-*/

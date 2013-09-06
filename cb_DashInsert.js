@@ -1,3 +1,5 @@
+//Using the JavaScript language, have the function DashInsert(num) insert dashes ('-') between each two odd numbers in num. For example: if num is 454793 the output should be 4547-9-3. Don't count zero as an odd number. 
+
 function DashInsert(num) { 
 
   // code goes here  
@@ -14,12 +16,6 @@ function DashInsert(num) {
   return result; 
          
 }
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(DashInsert(readline()));                            
 
-
-/*Using the JavaScript language, have the function DashInsert(num) insert dashes ('-') 
-between each two odd numbers in num. For example: if num is 454793 the output should be 
-4547-9-3. Don't count zero as an odd number. */
+// My test
+console.log(DashInsert(454793)) //solution: 4547-9-3 

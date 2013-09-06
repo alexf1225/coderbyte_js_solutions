@@ -1,3 +1,4 @@
+//Using the JavaScript language, have the function FirstReverse(str) take the str parameter being passed and return the string in reversed order. 
 function FirstReverse(str) { 
 
   // code goes here
@@ -5,30 +6,28 @@ function FirstReverse(str) {
            .reverse()
            .join("");
   return str; 
-         
 }
+
 //My Test
-var str = "coderbyte"
-console.log(FirstReverse(str))
+var str = "coderbyte";
+console.log(FirstReverse(str)); //solution: "etybredoc"
 
 
 
-/* As entered on Coderbyte.comp
+/* Solution not using reverse method
 
 function FirstReverse(str) { 
+  
+  result = [];
 
-  // code goes here
+  // turn string into an array
   str.split("");
-  result = []
+  
   for(var i = str.lenth - 1; i >=0; i--){
     result.push(str.pop())
   }
-  result.join("")
-  return result;
+  
+  return result.join("");
          
 }
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(FirstReverse(readline()));      
 */

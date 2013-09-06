@@ -1,6 +1,8 @@
+//Using the JavaScript language, have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space. 
+
 function LetterCapitalize(str) { 
 
-  // code goes here
+  // turn str into array
   var arr    = str.split(" ");
   
   for (var i in arr){
@@ -12,6 +14,6 @@ function LetterCapitalize(str) {
          
 }
    
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(LetterCapitalize(readline()));  
+// My test
+var str = "hello world";
+console.log(LetterCapitalize(str)); //solution: "Hello World"

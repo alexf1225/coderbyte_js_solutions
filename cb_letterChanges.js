@@ -1,4 +1,28 @@
+//Using the JavaScript language, have the function LetterChanges(str) take the str parameter being passed and modify it using the following algorithm. Replace every letter in the string with the letter following it in the alphabet (ie. c becomes d, z becomes a). Then capitalize every vowel in this new string (a, e, i, o, u) and finally return this modified string. 
 
+function LetterChanges(str) { 
+
+  // turn str into an array
+  var arr = str.split(""),
+      newStr = "";
+  
+  for (var i in arr){
+    if (/[a-yA-Y]/.test(arr[i]))          {arr[i] = String.fromCharCode(arr[i].charCodeAt(0)+1)}
+    if (/[aeiou]/.test(arr[i]))           {arr[i] = arr[i].toUpperCase()}
+    if (arr[i] === "Z" || arr[i] === "z") {arr[i] = "A"}
+  }
+  
+  newStr = arr.join("");
+  return newStr; 
+         
+}
+
+//My test
+var str = "fun times!"
+console.log(LetterChanges(str)); //solution: "gvO Ujnft!"
+
+
+/* Non RegEx Solution
 
 var letterChanges = function(str){
   //function to confirm if myChar is a vowel
@@ -46,33 +70,12 @@ var letterChanges = function(str){
 str = "fun times!#";
 console.log(letterChanges(str));
 
-/* My Latest Readable Regex Version
-function LetterChanges(str) { 
 
-  // code goes here
-  var arr = str.split(""),
-      newStr = "";
-  
-  for (var i in arr){
-    if (/[a-yA-Y]/.test(arr[i]))          {arr[i] = String.fromCharCode(arr[i].charCodeAt(0)+1)}
-    if (/[aeiou]/.test(arr[i]))           {arr[i] = arr[i].toUpperCase()}
-    if (arr[i] === "Z" || arr[i] === "z") {arr[i] = "A"}
-  }
-  
-  newStr = arr.join("");
-  return newStr; 
-         
-}
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(LetterChanges(readline()));  
 */
 
 
+/* Prior version, also non RegEx
 
-
-/* Raw Stuff to enter in coderbyte
 function LetterChanges(str) { 
 
   // code goes here 
